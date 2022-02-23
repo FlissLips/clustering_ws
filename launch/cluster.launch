@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <!-- Filtering Section -->
+  <node name="clustering" pkg="clustering_ws" type="clustering_node" output="screen">
+    <remap from="input" to="/velodyne_points"/>
+  </node>
+
+</launch>
